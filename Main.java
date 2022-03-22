@@ -7,12 +7,37 @@ class Main {
     testBubbleSort();
   }
 
-
+ /**
+  * Prüft, ob BubbleSort korrekt funktioniert.
+  */
   public static void testBubbleSort() {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
     List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
     
     bubbleSort(l1);
+    assertListsAreEqual(l1, l1Sorted);
+  }
+
+ /**
+  * Prüft, ob InsertionSort korrekt funktioniert.
+  */
+
+  public static void testInsertionSort() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
+    List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
+    
+    insertionSort(l1);
+    assertListsAreEqual(l1, l1Sorted);
+  }
+
+ /**
+  * Prüft, ob SelectionSort korrekt funktioniert.
+  */
+  public static void testSelectionSort() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
+    List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
+    
+    selectionSort(l1);
     assertListsAreEqual(l1, l1Sorted);
   }
 
