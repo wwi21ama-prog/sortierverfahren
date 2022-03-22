@@ -5,6 +5,13 @@ class Main {
     System.out.println("Hallo Welt");
   }
 
+ /**
+  * Vertauscht die Elemente an den Positionen i und j.
+  */
+  public static void swap(List list, int i, int j) {
+    // TODO
+  }
+
   /**
   * Läuft von links nach rechts durch die Liste und vergleicht dabei jedes Element
   * mit seinem rechten Nachbarn.
