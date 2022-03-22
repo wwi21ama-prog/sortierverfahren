@@ -56,4 +56,13 @@ class Main {
     // list.size() mal.
     // Evtl. Optimierungen einbauen.
   }
+
+ /**
+  * Sucht das kleinste Element in der Liste und gibt dessen Position
+  * zurück. Startet erst ab Position start.
+  */
+  public static int smallestElement(List list) {
+    // TODO
+    return -1;
+  }
 }
