@@ -5,6 +5,37 @@ import java.util.List;
 
 public class Test {
  /**
+  * Prüft, ob BubbleUp korrekt funktioniert.
+  */
+  public static void testBubbleUp() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(5,1,2,3,4));
+    List<Integer> l1AfterOneBubbleUp = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+    SortHelpers.bubbleUp(l1);
+    assertListsAreEqual(l1, l1AfterOneBubbleUp);
+    
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(5,1,2,3,4,6,1,2));
+    List<Integer> l2AfterOneBubbleUp = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,6));
+    SortHelpers.bubbleUp(l2);
+    assertListsAreEqual(l2, l2AfterOneBubbleUp); 
+  }
+
+ /**
+  * Prüft, ob die Version von BubbleUp korrekt funktioniert, die erst ab einer
+  * Position startet und aufh;rt, sobald nicht mehr getauscht wurde.
+  */
+  public static void testBubbleUpV2() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(5,1,2,6,3));
+    List<Integer> l1AfterOneBubbleUp = new ArrayList<>(Arrays.asList(1,2,5,6,3));
+    SortHelpers.bubbleUp(l1,0);
+    assertListsAreEqual(l1, l1AfterOneBubbleUp);
+
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(5,1,2,6,3));
+    List<Integer> l2AfterOneBubbleUp = new ArrayList<>(Arrays.asList(5,1,2,3,6));
+    SortHelpers.bubbleUp(l2,3);
+    assertListsAreEqual(l2, l2AfterOneBubbleUp);
+  }
+
+ /**
   * Prüft, ob BubbleSort korrekt funktioniert.
   */
   public static void testBubbleSort() {
