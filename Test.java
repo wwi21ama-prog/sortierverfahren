@@ -36,6 +36,16 @@ public class Test {
   }
 
  /**
+  * Prüft, ob Swap korrekt funktioniert.
+  */
+  public static void testSwap() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+    List<Integer> l1AfterSwap = new ArrayList<>(Arrays.asList(1,4,3,2,5));
+    SortHelpers.swap(l1, 1,3);
+    assertListsAreEqual(l1,l1AfterSwap);
+  }
+
+ /**
   * Prüft, ob BubbleDown korrekt funktioniert.
   */
   public static void testBubbledown() {
