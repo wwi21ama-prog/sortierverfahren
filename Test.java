@@ -1,3 +1,10 @@
+/*
+ * Hier sind Tests implementiert, die die anderen Funktionen testen.
+ * Die Tests werden aus main() heraus aufgerufen und geben Fehlermeldungen aus,
+ * falls die jeweils getestete Funktion nicht korrekt arbeitet.
+ * Sie sollten diese Tests nutzen, um zu prüfen, ob alles funktioniert.
+ * Zusätzlich können Sie Debug-Ausgaben oder weitere Testfälle hinzufügen.
+ */
 
 import java.util.ArrayList;
 import java.util.Arrays;

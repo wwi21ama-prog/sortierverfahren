@@ -1,3 +1,8 @@
+/*
+ * In dieser Datei sind die Funktionen für die tatsächlichen Sortierverfahren
+ * vorgegeben. Implementieren Sie jeweils vorher die nötigen Hilfsfunktionen.
+ */
+
 import java.util.List;
 
 public class Sorting {

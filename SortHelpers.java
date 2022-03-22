@@ -1,3 +1,10 @@
+/*
+ * Hier sind Vorgaben für Hilfsfunktionen, die zunm Sortieren hilfreich sind.
+ * 
+ * Implementieren Sie auf jeden Fall zuerst swap(), da diese in den meisten
+ * anderen Funktionen gebraucht wird oder zumindest sinnvoll ist.
+ */
+
 import java.util.List;
 
 class SortHelpers {
