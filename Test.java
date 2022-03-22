@@ -36,6 +36,37 @@ public class Test {
   }
 
  /**
+  * Prüft, ob BubbleDown korrekt funktioniert.
+  */
+  public static void testBubbledown() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(2,3,4,5,1));
+    List<Integer> l1AfterOneBubbleDown = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+    SortHelpers.bubbleDown(l1);
+    assertListsAreEqual(l1, l1AfterOneBubbleDown);
+    
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(2,3,4,5,1,6,7,8,2));
+    List<Integer> l2AfterOneBubbleDown = new ArrayList<>(Arrays.asList(1,2,3,4,5,2,6,7,8));
+    SortHelpers.bubbleDown(l2);
+    assertListsAreEqual(l2, l2AfterOneBubbleDown); 
+  }
+
+ /**
+  * Prüft, ob die Version von BubbleUp korrekt funktioniert, die erst ab einer
+  * Position startet und aufhört, sobald nicht mehr getauscht wurde.
+  */
+  public static void testBubbleDownV2() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(1,3,4,5,2));
+    List<Integer> l1AfterOneBubbleDown = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+    SortHelpers.bubbleDown(l1,4);
+    assertListsAreEqual(l1, l1AfterOneBubbleDown);
+
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(1,3,4,5,2,8,9,7));
+    List<Integer> l2AfterOneBubbleDown = new ArrayList<>(Arrays.asList(1,2,3,4,5,8,9,7));
+    SortHelpers.bubbleDown(l2,4);
+    assertListsAreEqual(l2, l2AfterOneBubbleDown);
+  }
+
+ /**
   * Prüft, ob BubbleSort korrekt funktioniert.
   */
   public static void testBubbleSort() {
