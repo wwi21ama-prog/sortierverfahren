@@ -36,6 +36,22 @@ public class Test {
   }
 
  /**
+  * Prüft, ob isSorted korrekt funktioniert.
+  */
+  public static void testIsSorted() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(1,2,30,4,5));
+    
+    if (!SortHelpers.isSorted(l1)) {
+        System.out.println("Fehler: l1 ist sortiert, isSorted() erkennt das aber nicht.");
+    }
+    if (SortHelpers.isSorted(l2)) {
+        System.out.println("Fehler: l2 ist nicht sortiert, isSorted() erkennt das aber nicht.");
+    }
+
+  }
+
+ /**
   * Prüft, ob Swap korrekt funktioniert.
   */
   public static void testSwap() {
