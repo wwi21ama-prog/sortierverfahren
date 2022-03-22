@@ -6,7 +6,7 @@ class Main {
     Test.testSmallestElement();
     Test.testBubbleUp();
     Test.testBubbleUpV2();
-    Test.testBubbledown();
+    Test.testBubbleDown();
     Test.testBubbleDownV2();
 
     Test.testBubbleSort();

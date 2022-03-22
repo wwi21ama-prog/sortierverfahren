@@ -64,7 +64,7 @@ public class Test {
  /**
   * Prüft, ob BubbleDown korrekt funktioniert.
   */
-  public static void testBubbledown() {
+  public static void testBubbleDown() {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(2,3,4,5,1));
     List<Integer> l1AfterOneBubbleDown = new ArrayList<>(Arrays.asList(1,2,3,4,5));
     SortHelpers.bubbleDown(l1);
