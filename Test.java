@@ -99,7 +99,7 @@ public class Test {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
     List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
     
-    Main.bubbleSort(l1);
+    Sorting.bubbleSort(l1);
     assertListsAreEqual(l1, l1Sorted);
   }
 
@@ -111,7 +111,7 @@ public class Test {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
     List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
     
-    Main.insertionSort(l1);
+    Sorting.insertionSort(l1);
     assertListsAreEqual(l1, l1Sorted);
   }
 
@@ -122,7 +122,7 @@ public class Test {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
     List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
     
-    Main.selectionSort(l1);
+    Sorting.selectionSort(l1);
     assertListsAreEqual(l1, l1Sorted);
   }
 
@@ -130,7 +130,7 @@ public class Test {
   * Prüft, ob die beiden Listen gleich sind.
   * Gibt eine Fehlermeldung aus, falls sie es nicht sind.
   */
-  public static void assertListsAreEqual(List l1, List l2) {
+  public static void assertListsAreEqual(List<Integer> l1, List<Integer> l2) {
     if (!l1.equals(l2)) {
       System.out.println("Fehler, Listen sollten gleich sein, sind es aber nicht.");
       System.out.println("l1: " + l1.toString());

@@ -5,7 +5,7 @@ class SortHelpers {
  /**
   * Vertauscht die Elemente an den Positionen i und j.
   */
-  public static void swap(List list, int i, int j) {
+  public static void swap(List<Integer> list, int i, int j) {
     // TODO
   }
 
@@ -13,7 +13,7 @@ class SortHelpers {
   * Sucht das kleinste Element in der Liste und gibt dessen Position
   * zurück. Startet erst ab Position start.
   */
-  public static int smallestElement(List list, int start) {
+  public static int smallestElement(List<Integer> list, int start) {
     // TODO
     return -1;
   }
@@ -23,7 +23,7 @@ class SortHelpers {
   * mit seinem rechten Nachbarn.
   * Wenn die beiden Elemente falsch sortiert sind, werden sie vertauscht.
   */
-  public static void bubbleUp(List list) {
+  public static void bubbleUp(List<Integer> list) {
     // TODO
   }
 
@@ -33,7 +33,7 @@ class SortHelpers {
   * Wenn die beiden Elemente falsch sortiert sind, werden sie vertauscht.
   * Startet bei Position start und stoppt, sobald einmal nicht vertauscht wurde.
   */
-  public static void bubbleUp(List list, int start) {
+  public static void bubbleUp(List<Integer> list, int start) {
     // TODO
   }
 
@@ -42,7 +42,7 @@ class SortHelpers {
   * mit seinem linken Nachbarn.
   * Wenn die beiden Elemente falsch sortiert sind, werden sie vertauscht.
   */
-  public static void bubbleDown(List list) {
+  public static void bubbleDown(List<Integer> list) {
     // TODO
   }
 
@@ -52,7 +52,7 @@ class SortHelpers {
   * Wenn die beiden Elemente falsch sortiert sind, werden sie vertauscht.
   * Startet bei Position start und stoppt, sobald einmal nicht vertauscht wurde.
   */
-  public static void bubbleDown(List list, int start) {
+  public static void bubbleDown(List<Integer> list, int start) {
     // TODO
   }
 }
