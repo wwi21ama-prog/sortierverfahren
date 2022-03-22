@@ -49,13 +49,6 @@ class Main {
   public static void bubbleDown(List list, int start) {
     // TODO
   }
-    
-  public static void bubbleSort(List list) {
-    // TODO
-    // In einer Schleife so oft bubbleUp() aufrufen, wie nötig.
-    // list.size() mal.
-    // Evtl. Optimierungen einbauen.
-  }
 
  /**
   * Sucht das kleinste Element in der Liste und gibt dessen Position
@@ -64,5 +57,15 @@ class Main {
   public static int smallestElement(List list) {
     // TODO
     return -1;
+  }
+
+ /**
+  * Sortiert die Liste mit dem Verfahren BubbleSort.
+  */
+  public static void bubbleSort(List list) {
+    // TODO
+    // In einer Schleife so oft bubbleUp() aufrufen, wie nötig.
+    // list.size() mal.
+    // Evtl. Optimierungen einbauen.
   }
 }
