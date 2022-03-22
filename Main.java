@@ -75,4 +75,11 @@ class Main {
   public static void insertionSort(List list) {
     // TODO
   }
+
+ /**
+  * Sortiert die Liste mit dem Verfahren SelectionSort.
+  */
+  public static void selectionSort(List list) {
+    // TODO
+  }
 }
