@@ -2,6 +2,13 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
+ /**
+  * Erwartet zwei Listen und prüft, ob sie gleich sind.
+  */
+  public static boolean listsAreEqual(List l1, List l2) {
+    // TODO
+    return false;
+  }
  /** Erwartet eine Liste und prüft, ob diese sortiert ist. */
   public static boolean isSorted(List list) {
     // TODO
