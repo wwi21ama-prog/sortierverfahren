@@ -132,7 +132,7 @@ public class Test {
   * Gibt eine Fehlermeldung aus, falls sie es nicht sind.
   */
   public static void assertListsAreEqual(List l1, List l2) {
-    if (!SortHelpers.listsAreEqual(l1, l2)) {
+    if (!l1.equals(l2)) {
       System.out.println("Fehler, Listen sollten gleich sein, sind es aber nicht.");
       System.out.println("l1: " + l1.toString());
       System.out.println("l2: " + l2.toString());
