@@ -68,4 +68,11 @@ class Main {
     // list.size() mal.
     // Evtl. Optimierungen einbauen.
   }
+
+ /**
+  * Sortiert die Liste mit dem Verfahren InsertionSort.
+  */
+  public static void insertionSort(List list) {
+    // TODO
+  }
 }
