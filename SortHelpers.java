@@ -2,12 +2,6 @@ import java.util.List;
 
 class SortHelpers {
 
- /** Erwartet eine Liste und prüft, ob diese sortiert ist. */
-  public static boolean isSorted(List list) {
-    // TODO
-    return false;
-  }
-
  /**
   * Vertauscht die Elemente an den Positionen i und j.
   */
