@@ -21,7 +21,7 @@ public class Test {
 
  /**
   * Prüft, ob die Version von BubbleUp korrekt funktioniert, die erst ab einer
-  * Position startet und aufh;rt, sobald nicht mehr getauscht wurde.
+  * Position startet und aufhört, sobald nicht mehr getauscht wurde.
   */
   public static void testBubbleUpV2() {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(5,1,2,6,3));
