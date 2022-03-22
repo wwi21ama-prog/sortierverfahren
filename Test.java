@@ -6,6 +6,21 @@ import java.util.List;
 public class Test {
 
  /**
+  * Prüft, ob smallestElement() korrekt funktioniert.
+  */
+  public static void testSmallestElement() {
+    List<Integer> l1 = new ArrayList<>(Arrays.asList(5,2,7,1,3));
+    List<Integer> l2 = new ArrayList<>(Arrays.asList(1,30,4,5,2));
+    
+    if (SortHelpers.smallestElement(l1,0) != 3) {
+        System.out.println("Fehler: Kleinstes Element in l1 nicht korrekt bestimmt.");
+    }
+    if (SortHelpers.smallestElement(l2,1) != 4) {
+        System.out.println("Fehler: Kleinstes Element in l2 nicht korrekt bestimmt.");
+    }
+  }
+
+ /**
   * Prüft, ob isSorted korrekt funktioniert.
   */
   public static void testIsSorted() {
@@ -18,7 +33,6 @@ public class Test {
     if (SortHelpers.isSorted(l2)) {
         System.out.println("Fehler: l2 ist nicht sortiert, isSorted() erkennt das aber nicht.");
     }
-
   }
 
  /**
