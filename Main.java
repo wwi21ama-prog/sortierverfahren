@@ -9,15 +9,6 @@ class Main {
   }
 
  /**
-  * Sucht das kleinste Element in der Liste und gibt dessen Position
-  * zurück. Startet erst ab Position start.
-  */
-  public static int smallestElement(List list) {
-    // TODO
-    return -1;
-  }
-
- /**
   * Sortiert die Liste mit dem Verfahren BubbleSort.
   */
   public static void bubbleSort(List list) {

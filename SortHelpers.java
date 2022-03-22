@@ -15,6 +15,15 @@ class SortHelpers {
     // TODO
   }
 
+ /**
+  * Sucht das kleinste Element in der Liste und gibt dessen Position
+  * zurück. Startet erst ab Position start.
+  */
+  public static int smallestElement(List list, int start) {
+    // TODO
+    return -1;
+  }
+
   /**
   * Läuft von links nach rechts durch die Liste und vergleicht dabei jedes Element
   * mit seinem rechten Nachbarn.
