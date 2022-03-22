@@ -2,6 +2,12 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
+    Test.testSwap();
+    Test.testSmallestElement();
+    Test.testBubbleUp();
+    Test.testBubbleUpV2();
+    Test.testBubbledown();
+    Test.testBubbleDownV2();
 
     Test.testBubbleSort();
     Test.testInsertionSort();
