@@ -2,7 +2,10 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hallo Welt");
+ /** Erwartet eine Liste und prüft, ob diese sortiert ist. */
+  public static boolean isSorted(List list) {
+    // TODO
+    return false;
   }
 
  /**
