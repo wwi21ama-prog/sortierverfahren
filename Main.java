@@ -4,7 +4,11 @@ import java.util.List;
 
 class Main {
   public static void main(String[] args) {
-    
+    testBubbleSort();
+  }
+
+
+  public static void testBubbleSort() {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(15,2,34,25,77,23));
     List<Integer> l1Sorted = new ArrayList<>(Arrays.asList(2,15,23,25,34,77));
     
