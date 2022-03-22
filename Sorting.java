@@ -11,9 +11,10 @@ public class Sorting {
   */
   public static void bubbleSort(List<Integer> list) {
     // TODO
-    // In einer Schleife so oft bubbleUp() aufrufen, wie nötig.
-    // list.size() mal.
-    // Evtl. Optimierungen einbauen.
+
+    // Benötigte Hilfsfunktion: SortHelpers.bubbleUp(List).
+
+    // Rufen Sie in einer Schleife list.size() mal bubbleUp() auf.
   }
 
  /**
@@ -21,6 +22,12 @@ public class Sorting {
   */
   public static void insertionSort(List<Integer> list) {
     // TODO
+
+    // Benötigte Hilfsfunktion: SortHelpers.bubbleDown(List, int).
+
+    // Gehen Sie einmal durch die Liste und lassen Sie das jeweilige
+    // Element mittels bubbleDown() absinken, bis es an der richtigen
+    // Stelle steht.
   }
 
  /**
@@ -28,5 +35,12 @@ public class Sorting {
   */
   public static void selectionSort(List<Integer> list) {
     // TODO
+
+    // Benötigte Hilfsfunktionen: SortHelpers.smallestElement(List, int) 
+    // und SortHelpers.swap(List,int,int).
+
+    // Gehen Sie durch die Liste. In jedem Schritt suchen Sie mittels
+    // smallestElement() das kleinste Element in der Rest-Liste.
+    // Tauschen Sie dieses kleinste Element mit dem aktuellen.
   }
 }
