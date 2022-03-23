@@ -1,5 +1,5 @@
-/*
- * Hier sind Tests implementiert, die die anderen Funktionen testen.
+
+ /* Hier sind Tests implementiert, die die anderen Funktionen testen.
  * Die Tests werden aus main() heraus aufgerufen und geben Fehlermeldungen aus,
  * falls die jeweils getestete Funktion nicht korrekt arbeitet.
  * Sie sollten diese Tests nutzen, um zu prüfen, ob alles funktioniert.
@@ -18,12 +18,16 @@ public class Test {
   public static void testSmallestElement() {
     List<Integer> l1 = new ArrayList<>(Arrays.asList(5,2,7,1,3));
     List<Integer> l2 = new ArrayList<>(Arrays.asList(1,30,4,5,2));
+    List<Integer> l3 = new ArrayList<>();
     
     if (SortHelpers.smallestElement(l1,0) != 3) {
         System.out.println("Fehler: Kleinstes Element in l1 nicht korrekt bestimmt.");
     }
     if (SortHelpers.smallestElement(l2,1) != 4) {
         System.out.println("Fehler: Kleinstes Element in l2 nicht korrekt bestimmt.");
+    }
+    if (SortHelpers.smallestElement(l3,3) != -1) {
+        System.out.println("Fehler: Kleinstes Element in l3 nicht korrekt bestimmt.");
     }
   }
 

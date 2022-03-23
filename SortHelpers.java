@@ -13,7 +13,9 @@ class SortHelpers {
   * Vertauscht die Elemente an den Positionen i und j.
   */
   public static void swap(List<Integer> list, int i, int j) {
-    // TODO
+    int h = list.get(i);
+    list.set(i,list.get(j));
+    list.set(j,h);
   }
 
  /**
@@ -59,7 +61,17 @@ class SortHelpers {
    * zurück. Startet erst ab Position start.
    */
   public static int smallestElement(List<Integer> list, int start) {
-    // TODO
-    return -1;
+    if (start >= list.size() || start < 0) {
+      return -1;
+    }
+    
+    int smallestPos = start;
+    for (int i=start+1; i<list.size(); i++) {
+      if (list.get(i) < list.get(smallestPos)) {
+        smallestPos = i;
+      }
+      
+    }
+    return smallestPos;
   }
 }

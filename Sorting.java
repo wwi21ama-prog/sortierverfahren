@@ -34,7 +34,10 @@ public class Sorting {
   * Sortiert die Liste mit dem Verfahren SelectionSort.
   */
   public static void selectionSort(List<Integer> list) {
-    // TODO
+    for (int i=0; i<list.size()-1; i++) {
+      int smallestPos = SortHelpers.smallestElement(list, i);
+      SortHelpers.swap(list,i,smallestPos);
+    }
 
     // Benötigte Hilfsfunktionen: SortHelpers.smallestElement(List, int) 
     // und SortHelpers.swap(List,int,int).
